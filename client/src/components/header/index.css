@@ -1,0 +1,26 @@
+.os-header {
+  display: flex;
+  width: auto;
+  background: #679db4;
+  border-bottom: 1px solid lightgray;
+}
+
+.os-header * {
+  padding: 10px;
+}
+
+.os-title {
+  padding-top: 15px;
+  padding-right: 40px;
+}
+
+.os-no-link {
+  text-decoration: none;
+  color: white;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.os-no-link:hover {
+  color: #E0D6A5;
+  transform: translateY(-5px);
+}
