@@ -1,5 +1,10 @@
 /* Global CSS */
+body, html {
+  margin: 0;
+  padding: 0;
+}
 
+/* Website Theme Colors */
 .os-blue {
   color: #095788;
 }
@@ -7,10 +12,6 @@
 .os-steelblue {
   color: #679db4;
 }
-
-/* .os-steelblue {
-  color: #58889C;
-} */
 
 .os-greybeige {
   color: #A5A184;
@@ -22,4 +23,16 @@
 
 .os-white {
   color: white;
+}
+
+
+.os-no-link {
+  text-decoration: none;
+  color: white;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.os-no-link:hover {
+  color: #E0D6A5;
+  transform: translateY(-5px);
 }
