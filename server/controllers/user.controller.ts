@@ -1,6 +1,6 @@
 import express, { Response } from 'express';
-import { AddUserRequest, OctoSiteSocket, User } from '../types';
-import { saveUser } from '../model/application';
+import { AddUserRequest, GetUserRequest, OctoSiteSocket, User } from '../types';
+import { getUserByUsername, saveUser } from '../services/user.service';
 
 const userController = (socket: OctoSiteSocket) => {
   const router = express.Router();
@@ -46,8 +46,34 @@ const userController = (socket: OctoSiteSocket) => {
     }
   };
 
+  /**
+   * Fetches a User from the database by their username.
+   * If there is an error, the HTTP response's status is updated.
+   *
+   * @param req The GetUserRequest object containing the username.
+   * @param res The HTTP response object used to send back the result of the operation.
+   *
+   * @returns A Promise that resolves to void.
+   */
+  const getUser = async (req: GetUserRequest, res: Response): Promise<void> => {
+    const { username } = req.params;
+
+    try {
+      const userFromDb = await getUserByUsername(username);
+
+      if ('error' in userFromDb) {
+        throw new Error(userFromDb.error as string);
+      }
+
+      res.json(userFromDb);
+    } catch (err) {
+      res.status(500).send(`${(err as Error).message}`);
+    }
+  };
+
   // Routes
   router.post('/addUser', addUser);
+  router.get('/getUser/:username', getUser);
 
   return router;
 };

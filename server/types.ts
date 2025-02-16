@@ -1,5 +1,5 @@
 import { Request } from 'express';
-import { ObjectId } from 'mongoose';
+import { ObjectId } from 'mongodb';
 import { Server } from 'socket.io';
 
 export type OctoSiteSocket = Server<ServerToClientEvents>;
@@ -25,9 +25,14 @@ export interface User {
 }
 
 /**
- * Type representing the possible responses for a User-related operation.
+ * Type representing a User object with their password omitted for security.
  */
-export type UserResponse = User | { error: string };
+export type SafeUser = Omit<User, 'password'>;
+
+/**
+ * Type representing possible responses for a User-related operation. Omits user password for security.
+ */
+export type UserResponse = SafeUser | { error: string };
 
 
 /**
@@ -36,4 +41,14 @@ export type UserResponse = User | { error: string };
  */
 export interface AddUserRequest extends Request {
   body: User;
+}
+
+/**
+ * Interface for the request body when retrieving a user by their username.
+ * - username - The username to retrieve.
+ */
+export interface GetUserRequest extends Request {
+  params: {
+    username: string;
+  };
 }

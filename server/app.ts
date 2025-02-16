@@ -8,7 +8,7 @@ import cors from 'cors';
 import { Server } from 'socket.io';
 import * as http from 'http';
 
-import userController from './controller/user';
+import userController from './controllers/user.controller';
 import { OctoSiteSocket } from './types';
 
 dotenv.config();
@@ -17,17 +17,18 @@ const MONGO_URL = `${process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017'}/oct
 const CLIENT_URL = process.env.CLIENT_URL || 'http://localhost:3000';
 const port = parseInt(process.env.PORT || '8000');
 
-mongoose
-  .connect(MONGO_URL)
-  .catch(err => console.log('MongoDB connection error: ', err));
-
 const app = express();
 const server = http.createServer(app);
 const socket: OctoSiteSocket = new Server(server, {
   cors: { origin: '*' },
 });
 
+function connectDatabase() {
+  return mongoose.connect(MONGO_URL).catch(err => console.log('MongoDB connection error: ', err));
+}
+
 function startServer() {
+  connectDatabase();
   server.listen(port, () => {
     console.log(`Server is running on port ${port}`);
   });

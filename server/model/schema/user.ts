@@ -7,18 +7,16 @@ import { Schema } from 'mongoose';
  * - `username`: The user's username. This field is required.
  * - `password`: The user's password. This field is required.
  */
-const userSchema: Schema = new Schema(
-  {
-    username: {
-      type: String,
-      unique: true,
-      required: true,
-    },
-    password: {
-      type: String,
-      required: true,
-    },
-  }
-);
+const userSchema: Schema = new Schema({
+  username: {
+    type: String,
+    unique: true,
+    required: true,
+  },
+  password: {
+    type: String,
+    required: true,
+  },
+});
 
 export default userSchema;
