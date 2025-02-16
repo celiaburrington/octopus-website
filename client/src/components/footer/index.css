@@ -1,0 +1,18 @@
+.os-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #679db4;
+  color: white;
+  text-align: center;
+  font-size: small;
+  padding: 4px;
+}
+
+.os-footer * {
+  padding: 15px;
+}
+
+.os-footer-menu:hover {
+  text-decoration: underline;
+}

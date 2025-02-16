@@ -3,25 +3,27 @@ import './index.css';
 import { Link } from 'react-router-dom';
 
 /**
- * Header component that renders the main title and a search bar.
- * The search bar allows the user to input a query and navigate to the search results page
- * when they press Enter.
+ * Header component that renders the main title and a menu bar.
  */
 const Header = () => (
   <div id='os-header' className='os-header'>
-    <img src='site-resources/icon.png' width={75}></img>
-    <h2 className='os-title os-white'>Octopus Website!</h2>
-    <Link to='/' className='os-no-link'>
-      <h3 className='os-home-menu'>Home</h3>
+    <Link to='/' className='os-icon'>
+      <img src='site-resources/icon(2).png' width={75} height={80}></img>
     </Link>
-    <Link to='how-to-help' className='os-no-link'>
-      <h3 className='os-help-menu'>How To Help</h3>
+    <Link to='/' className='os-title os-menu-item os-no-link'>
+      Octopus Project
     </Link>
-    <Link to='game' className='os-no-link'>
-      <h3 className='os-game-menu'>Play a Game</h3>
+    <Link to='how-to-help' className='os-menu-item os-no-link'>
+      Get involved
     </Link>
-    <Link to='octoblog' className='os-no-link'>
-      <h3 className='os-blog-menu'>Octoblog</h3>
+    <Link to='octopus-facts' className='os-menu-item os-no-link'>
+      Octoids
+    </Link>
+    <Link to='game' className='os-menu-item os-no-link'>
+      Game time!
+    </Link>
+    <Link to='octoblog' className='os-menu-item os-blog-menu os-no-link'>
+      Octoblog!
     </Link>
   </div>
 );

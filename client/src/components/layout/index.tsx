@@ -2,9 +2,11 @@ import React from 'react';
 import './index.css';
 import { Outlet } from 'react-router-dom';
 import Header from '../header';
+import Footer from '../footer';
 
 /**
- * Main component representing the layout of the main page, including a header menu and the main content area.
+ * Layout component representing the layout of the main page, including a header menu,
+ * the main content area, and footer.
  */
 const Layout = () => (
   <div id='os-main' className='os-main'>
@@ -12,6 +14,7 @@ const Layout = () => (
     <div id='os-body' className='os-body'>
       <Outlet />
     </div>
+    <Footer />
   </div>
 );
 
