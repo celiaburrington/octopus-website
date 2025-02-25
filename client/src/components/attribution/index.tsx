@@ -3,6 +3,34 @@ import './index.css';
 export default function Attribution() {
   return (
     <div className='os-attribution-page'>
+      <div className='os-attribution-title'>Sources (for the science-y stuff)</div>
+      <div className='os-sources-body'>
+        &quot;The Insane Biology of: The Octopus,&quot;, uploaded by Real Science, November 14,
+        2020,{' '}
+        <a href='https://www.youtube.com/watch?v=mFP_AjJeP-M'>
+          https://www.youtube.com/watch?v=mFP_AjJeP-M
+        </a>
+        <br />
+        <br />
+        Longo, S.B., Clark, B., York, R. and Jorgenson, A.K. (2019), Aquaculture and the
+        displacement of fisheries captures. Conservation Biology, 33: 832-841.{' '}
+        <a href='https://doi.org/10.1111/cobi.13295'>https://doi.org/10.1111/cobi.13295</a>
+        <br />
+        <br />
+        Birch, J, Burn, C, Schnell, A, Browning, H & Crump, A. 2021. Review of the evidence of
+        sentience in cephalopod molluscs and decapod crustaceans. LSE Consulting. LSE Enterprise
+        Ltd. The London School of Economics and Political Science. Available at:{' '}
+        <a href='https://www.lse.ac.uk/News/News-Assets/PDFs/2021/Sentience-in-Cephalopod-Molluscs-and-Decapod-Crustaceans-Final-Report-November-2021.pdf'>
+          https://www.lse.ac.uk/News/News-Assets/PDFs/2021/Sentience-in-Cephalopod-Molluscs-and-Decapod-Crustaceans-Final-Report-November-2021.pdf
+        </a>
+        <br />
+        <br />
+        “Researchers Model How Octopus Arms Make Decisions.” AGU Newsroom,{' '}
+        <a href='news.agu.org/press-release/researchers-model-how-octopus-arms-make-decisions/'>
+          news.agu.org/press-release/researchers-model-how-octopus-arms-make-decisions/
+        </a>
+        . Accessed 20 Feb. 2025.
+      </div>
       <div className='os-attribution-title'>Image Attribution</div>
       <div className='os-img-attr-body'>
         [1]
@@ -92,7 +120,6 @@ export default function Attribution() {
         Commons
         <img src='/site-resources/Octopus_sinensis.jpg' width={500}></img>
       </div>
-      <div className='os-attribution-title'>Sources (for the science-y stuff)</div>
     </div>
   );
 }

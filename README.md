@@ -17,7 +17,6 @@ Priority #1 is main page UI.
 Misc.
 
 - Gov API for octopus bills attribution
-- Fact sources
 
 Home Page
 
