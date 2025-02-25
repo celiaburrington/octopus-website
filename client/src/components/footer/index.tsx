@@ -17,7 +17,7 @@ export default function Footer() {
         Celia Burrington
       </a>
       Last modifed 2025
-      <Link to='attribution' className='os-footer-menu os-no-link'>
+      <Link to='/attribution' className='os-footer-menu os-no-link'>
         Bibliography and Image Attribution
       </Link>
     </div>
