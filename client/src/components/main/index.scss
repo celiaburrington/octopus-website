@@ -13,7 +13,7 @@
 
 body {
   .parallax_wrapper {
-    height: 695px;
+    height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
     perspective: 300px; // refers to the z axis, says I'm looking from 300px away from the computer
@@ -31,13 +31,13 @@ body {
 
     .parallax_group {
       position: relative;
-      height: 695px;
+      height: 100vh;
       transform-style: preserve-3d; 
       // ^ when we give depth to pages, this makes sure perspective is preserved (some browsers will flatten)
 
       .parallax_layer {
         position: absolute;
-        inset: 0; // top bottom left and right stretch to all those?
+        inset: 0;
         @include align-center;
       }
 
