@@ -3,40 +3,7 @@ import { Link } from 'react-router-dom';
 import { RiBallPenLine } from 'react-icons/ri';
 import * as billResponse from './temp.json';
 import './HowToHelp.css';
-
-type Bill = {
-  id: string;
-  session: string;
-  jurisdiction: {
-    id: string;
-    name: string;
-    classification: 'state' | 'municipality' | 'country';
-  };
-  from_organization: {
-    id: string;
-    name: string;
-    classification: string;
-  };
-  identifier: string;
-  title: string;
-  created_at: string;
-  updated_at: string;
-  openstates_url: string;
-  first_action_date?: string;
-  latest_action_date?: string;
-  latest_action_description?: string;
-  latest_passage_date?: string;
-};
-
-type BillResponse = {
-  results: Bill[];
-  pagination: {
-    max_page: number;
-    page: number;
-    per_page: number;
-    total_items: number;
-  };
-};
+import { Bill, BillResponse } from '../../types';
 
 const HowToHelp = () => {
   const [bills, setBills] = useState<BillResponse | null>(null);

@@ -21,3 +21,37 @@ export interface User {
   username: string;
   password: string;
 }
+
+export type Bill = {
+  id: string;
+  session: string;
+  jurisdiction: {
+    id: string;
+    name: string;
+    classification: 'state' | 'municipality' | 'country';
+  };
+  from_organization: {
+    id: string;
+    name: string;
+    classification: string;
+  };
+  identifier: string;
+  title: string;
+  created_at: string;
+  updated_at: string;
+  openstates_url: string;
+  first_action_date?: string;
+  latest_action_date?: string;
+  latest_action_description?: string;
+  latest_passage_date?: string;
+};
+
+export type BillResponse = {
+  results: Bill[];
+  pagination: {
+    max_page: number;
+    page: number;
+    per_page: number;
+    total_items: number;
+  };
+};
