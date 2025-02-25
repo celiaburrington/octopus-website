@@ -40,12 +40,10 @@ type BillResponse = {
 
 const HowToHelp = () => {
   const [bills, setBills] = useState<BillResponse | null>(null);
-  const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     const fetchData = async () => {
-      setLoading(true);
       try {
         // const response = await fetch(
         //   'https://v3.openstates.org/bills?sort=updated_asc&q=octopus+aquaculture+-labeling&page=1&per_page=20&apikey=190cad75-86bd-4ce0-af6f-c67321f65a75',
@@ -60,8 +58,6 @@ const HowToHelp = () => {
       } catch (err) {
         setError(`Error Loading Bills`);
         setBills(null);
-      } finally {
-        setLoading(false);
       }
     };
 

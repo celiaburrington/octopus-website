@@ -11,7 +11,6 @@
   inset: 0
 }
 
-
 body {
   .parallax_wrapper {
     height: 100vh;
@@ -170,14 +169,10 @@ body {
       text-align: center;
     }
 
-    #group-2 {}
-
     #group-2 > .mid_layer2 { // Group 1 that has a child base_layer
       background-color: #E0D6A5;
       background-color: #A5A184;
     }
-
-    #outro {}
   }
 }
 
