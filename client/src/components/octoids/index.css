@@ -1,0 +1,70 @@
+.os-octoids-page-head {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 800px;
+  background-image: url('../../../public/site-resources/Octopus_Vulgaris.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.os-img-attr {
+  position: absolute;
+  font-size: small;
+  color: white;
+  padding: 10px;
+  inset: 0;
+}
+
+.os-octoids-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 250px;
+  font-weight: 700;
+  font-size: 50px;
+  color: #095788;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.os-section-title {
+  display: flex;
+  align-items: center;
+  padding-left: 150px;
+  width: 100%;
+  height: 100px;
+  font-weight: 700;
+  font-size: 40px;
+  color: #095788;
+}
+
+.os-section-title * {
+  padding-left: 15px;
+}
+
+.os-section-body {
+  padding: 0px 150px 0px 150px;
+  font-size: large;
+}
+
+.os-octoid-imgs {
+  display: flex;
+  justify-content: center;
+  height: 250px;
+}
+
+.os-octoid-attr {
+  display: flex;
+  justify-content: center;
+  font-size: small;
+  color: black;
+}
+
+.os-video-embed {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}

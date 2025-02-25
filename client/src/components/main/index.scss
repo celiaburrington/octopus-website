@@ -1,0 +1,185 @@
+@mixin align-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin os-img-attr {
+  position: absolute;
+  font-size: small;
+  padding: 10px;
+  inset: 0
+}
+
+
+body {
+  .parallax_wrapper {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 300px; // refers to the z axis, says I'm looking from 300px away from the computer
+    background-color: #A5A184;
+
+    .intro_screen {
+      height: 110px; // for now, needs to match header height
+      margin-bottom: 100px; // remove to take away gap between menu and first base image
+      @include align-center;
+    }
+
+    .outro_screen {
+      height: 20px;
+    }
+
+    .parallax_group {
+      position: relative;
+      height: 100vh;
+      transform-style: preserve-3d; 
+      // ^ when we give depth to pages, this makes sure perspective is preserved (some browsers will flatten)
+
+      .parallax_layer {
+        position: absolute;
+        inset: 0; // top bottom left and right stretch to all those?
+        @include align-center;
+      }
+
+      .base_layer {
+        // scale: 1 + ((Z transform val * -1) / perspective)
+        // 1 + ((-300 * -1) / 300) = 1+1 = 2
+        transform: translateZ(-300px) scale(2);
+
+        .os-img-attr {
+          @include os-img-attr;
+        }
+      }
+
+      .mid_layer1 {
+        transform: translateZ(150px) scale(0.5)
+      }
+
+      .mid_layer_test {
+        // background-color: #A5A184;
+        background-color: #E0D6A5;
+        transform: translateZ(0)
+      }
+
+      .video_layer {
+        background-color: #E0D6A5;
+
+        .os-video {
+          width: 55%;
+          height: auto;
+          border: 2px solid #095788;
+          box-shadow: 0 0 10px #095788;
+        }
+
+        .os-opening-info {
+          width: 500px;
+          height: 600px;
+          background-color: white;
+          border: 2px solid #095788;
+          box-shadow: 0 0 10px #095788;
+          margin-right: 2%;
+
+          .os-op-title {
+            font-weight: 700;
+            font-size: x-large;
+            padding: 20px 0px 0px 20px;
+            color: #095788;
+          }
+
+          .os-op-body {
+            font-size: large;
+            padding: 0px 25px;
+
+            .os-video-attr {
+              color: inherit;
+              font-size: medium;
+            }
+          }
+        }
+      }
+
+      .mid_layer2 {
+        background-color: #E0D6A5;
+        background-image: url('../../../public/site-resources/Octopus_Martinique.jpg');
+        background-size: cover;
+        background-position: center;
+        transform: translateZ(0);
+
+        .os-img-attr {
+          @include os-img-attr;
+        }
+      }
+
+      .top_layer {
+        position: absolute;
+        inset: 0;
+        transform: translateZ(120px) scale(0.6);
+
+        .os-info-cards {
+          display: flex;
+          justify-content: center;
+          margin-top: 200px;
+
+          .os-card {
+            height: fit-content;
+            width: 300px;
+            box-shadow: 0 0 10px black;
+            padding: 0px 10px 10px 15px;
+            margin: 20px;
+            color: white;
+            background-color: #095788;
+            opacity: 90%;
+
+            .os-learn-more {
+              display: flex;
+              justify-content: center;
+              margin: 10px 0px;
+
+              .os-learn-arrow {
+                margin-top: 10px;
+                font-size: small;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    #intro {
+      z-index: 0;
+    }
+
+    #group-1 {
+      z-index: -1;
+    }
+
+    #group-1 > .base_layer { // Group 1 that has a child base_layer
+      background-color: #E0D6A5;
+      background-image: url('../../../public/site-resources/Octopus_vulgaris_2.jpg');
+      background-size: cover;
+    }
+
+    #group-1 > .mid_layer1 {
+      top: 0;
+      height: 250px;
+      margin-top: 10%;
+      font-size: 3em;
+      color: #095788;
+      background-color: rgba(255, 255, 255, 0.7);
+      text-align: center;
+    }
+
+    #group-2 {}
+
+    #group-2 > .mid_layer2 { // Group 1 that has a child base_layer
+      background-color: #E0D6A5;
+      background-color: #A5A184;
+    }
+
+    #outro {}
+  }
+}
+
+
+// colors: steel: 679db4, blue: 095788, sand: E0D6A5, beige: A5A184

@@ -1,0 +1,327 @@
+{
+  "results": [
+    {
+      "id": "ocd-bill/fa1ad9f9-10ff-489e-bf2f-04b7e87577cf",
+      "session": "2019-2020",
+      "jurisdiction": {
+        "id": "ocd-jurisdiction/country:us/state:ny/government",
+        "name": "New York",
+        "classification": "state"
+      },
+      "from_organization": {
+        "id": "ocd-organization/8291a233-623d-40e8-882d-21ec2d382c87",
+        "name": "Senate",
+        "classification": "upper"
+      },
+      "identifier": "S 7680",
+      "title": "Relates to prohibiting the service of live octopus and squid in restaurants",
+      "classification": [
+        "bill"
+      ],
+      "subject": [],
+      "extras": {
+
+      },
+      "created_at": "2020-02-06T11:05:31.616543+00:00",
+      "updated_at": "2021-02-03T05:19:03.224036+00:00",
+      "openstates_url": "https://openstates.org/ny/bills/2019-2020/S7680/",
+      "first_action_date": "2020-02-05",
+      "latest_action_date": "2020-09-30",
+      "latest_action_description": "PRINT NUMBER 7680A",
+      "latest_passage_date": ""
+    },
+    {
+      "id": "ocd-bill/1c6ed126-4260-4284-8885-2b1f39383927",
+      "session": "118",
+      "jurisdiction": {
+        "id": "ocd-jurisdiction/country:us/government",
+        "name": "United States",
+        "classification": "country"
+      },
+      "from_organization": {
+        "id": "ocd-organization/072da2ce-df81-52c3-9cc8-323e208cdf10",
+        "name": "Senate",
+        "classification": "upper"
+      },
+      "identifier": "S 4810",
+      "title": "OCTOPUS Act of 2024",
+      "classification": [
+        "bill"
+      ],
+      "subject": [],
+      "extras": {
+        "sponsor_bioguides": [
+          "W000802"
+        ],
+        "cosponsor_bioguides": [
+          "M001153"
+        ]
+      },
+      "created_at": "2024-07-27T19:06:55.571721+00:00",
+      "updated_at": "2024-08-27T19:03:46.723332+00:00",
+      "openstates_url": "https://openstates.org/us/bills/118/S4810/",
+      "first_action_date": "2024-07-25T04:00:00+00:00",
+      "latest_action_date": "2024-07-25T04:00:00+00:00",
+      "latest_action_description": "Introduced in Senate",
+      "latest_passage_date": ""
+    },
+    {
+      "id": "ocd-bill/07573c91-b421-4f14-9954-c9e8ef5ce03c",
+      "session": "20232024",
+      "jurisdiction": {
+        "id": "ocd-jurisdiction/country:us/state:ca/government",
+        "name": "California",
+        "classification": "state"
+      },
+      "from_organization": {
+        "id": "ocd-organization/e70e812e-44d2-46b0-9eae-2f3b9a1d5150",
+        "name": "Assembly",
+        "classification": "lower"
+      },
+      "identifier": "AB 3162",
+      "title": "Octopus: aquaculture: prohibition.",
+      "classification": [
+        "bill"
+      ],
+      "subject": [
+        "Octopus",
+        "aquaculture",
+        "prohibition"
+      ],
+      "extras": {
+        "tags": [
+          "fiscal committee",
+          "local program"
+        ],
+        "impact_clause": "An act to add Section 15007.5 to the Fish and Game Code, relating to fish and wildlife."
+      },
+      "created_at": "2024-02-17T12:17:57.095687+00:00",
+      "updated_at": "2024-10-01T12:29:35.949175+00:00",
+      "openstates_url": "https://openstates.org/ca/bills/20232024/AB3162/",
+      "first_action_date": "2024-02-16",
+      "latest_action_date": "2024-09-27",
+      "latest_action_description": "Chaptered by Secretary of State - Chapter 758, Statutes of 2024.",
+      "latest_passage_date": "2024-08-26"
+    },
+    {
+      "id": "ocd-bill/bd285dcc-e4c9-4245-b700-335034251933",
+      "session": "2023-2024",
+      "jurisdiction": {
+        "id": "ocd-jurisdiction/country:us/state:wa/government",
+        "name": "Washington",
+        "classification": "state"
+      },
+      "from_organization": {
+        "id": "ocd-organization/7417a716-eba8-4437-a6e9-df14694bcb79",
+        "name": "House",
+        "classification": "lower"
+      },
+      "identifier": "HB 1153",
+      "title": "Prohibiting octopus farming.",
+      "classification": [
+        "bill"
+      ],
+      "subject": [],
+      "extras": {
+
+      },
+      "created_at": "2023-01-06T08:37:29.799224+00:00",
+      "updated_at": "2024-10-09T14:25:09.817092+00:00",
+      "openstates_url": "https://openstates.org/wa/bills/2023-2024/HB1153/",
+      "first_action_date": "2023-02-08T13:00:00+00:00",
+      "latest_action_date": "2024-02-19T18:30:00+00:00",
+      "latest_action_description": "Scheduled for public hearing in the Senate Committee on Agriculture, Water, Natural Resources & Parks at 01:30 PM",
+      "latest_passage_date": ""
+    },
+    {
+      "id": "ocd-bill/c2850950-e7a9-4826-aaee-84567a763777",
+      "session": "194th",
+      "jurisdiction": {
+        "id": "ocd-jurisdiction/country:us/state:ma/government",
+        "name": "Massachusetts",
+        "classification": "state"
+      },
+      "from_organization": {
+        "id": "ocd-organization/ca38ad9c-c3d5-4c4f-bc2f-d885218ed802",
+        "name": "House",
+        "classification": "lower"
+      },
+      "identifier": "HD 500",
+      "title": "An Act prohibiting the aquaculture of any species of octopus for the purpose of human consumption",
+      "classification": [
+        "proposed bill"
+      ],
+      "subject": [],
+      "extras": {
+
+      },
+      "created_at": "2025-01-09T22:19:43.376652+00:00",
+      "updated_at": "2025-01-09T22:19:43.376683+00:00",
+      "openstates_url": "https://openstates.org/ma/bills/194th/HD500/",
+      "first_action_date": "",
+      "latest_action_date": "",
+      "latest_action_description": "",
+      "latest_passage_date": ""
+    },
+    {
+      "id": "ocd-bill/3edc387b-e4d4-4cd9-9cd3-622bd03d94f5",
+      "session": "221",
+      "jurisdiction": {
+        "id": "ocd-jurisdiction/country:us/state:nj/government",
+        "name": "New Jersey",
+        "classification": "state"
+      },
+      "from_organization": {
+        "id": "ocd-organization/68d34c4f-e59d-42a2-bcfe-fbf7f8cc8f15",
+        "name": "Assembly",
+        "classification": "lower"
+      },
+      "identifier": "A 5078",
+      "title": "Prohibits aquaculture of any species of octopus for purpose of human consumption.",
+      "classification": [
+        "bill"
+      ],
+      "subject": [
+        "FISH"
+      ],
+      "extras": {
+
+      },
+      "created_at": "2024-11-15T01:11:03.562672+00:00",
+      "updated_at": "2025-01-17T00:40:37.427671+00:00",
+      "openstates_url": "https://openstates.org/nj/bills/221/A5078/",
+      "first_action_date": "2024-12-09T05:00:00+00:00",
+      "latest_action_date": "2024-12-09T05:00:00+00:00",
+      "latest_action_description": "Introduced in the Assembly, Referred to Assembly Commerce, Economic Development and Agriculture Committee",
+      "latest_passage_date": ""
+    },
+    {
+      "id": "ocd-bill/a31e90da-8531-419e-a6b9-2cb6e804b08f",
+      "session": "2025",
+      "jurisdiction": {
+        "id": "ocd-jurisdiction/country:us/state:ct/government",
+        "name": "Connecticut",
+        "classification": "state"
+      },
+      "from_organization": {
+        "id": "ocd-organization/8e8c6d29-dcc1-4d2f-9ca5-82a4a3d3b962",
+        "name": "House",
+        "classification": "lower"
+      },
+      "identifier": "HB 5900",
+      "title": "AN ACT PROHIBITING THE CULTIVATION OF OCTOPUS FOR HUMAN CONSUMPTION AND THE USE OF OCTOPUS FOR ENTERTAINMENT PURPOSES.",
+      "classification": [
+        "bill"
+      ],
+      "subject": [],
+      "extras": {
+
+      },
+      "created_at": "2025-01-21T20:01:38.066524+00:00",
+      "updated_at": "2025-01-29T02:00:30.525556+00:00",
+      "openstates_url": "https://openstates.org/ct/bills/2025/HB5900/",
+      "first_action_date": "2025-01-22",
+      "latest_action_date": "2025-01-22",
+      "latest_action_description": "REF. TO JOINT COMM. ON Environment",
+      "latest_passage_date": ""
+    },
+    {
+      "id": "ocd-bill/54b14cb1-a752-4c9b-bd66-1b19c1492e08",
+      "session": "2025R1",
+      "jurisdiction": {
+        "id": "ocd-jurisdiction/country:us/state:or/government",
+        "name": "Oregon",
+        "classification": "state"
+      },
+      "from_organization": {
+        "id": "ocd-organization/9b08e1e9-5a70-48c1-983d-508a3281c378",
+        "name": "House",
+        "classification": "lower"
+      },
+      "identifier": "HB 2557",
+      "title": "Relating to octopus.",
+      "classification": [
+        "bill"
+      ],
+      "subject": [],
+      "extras": {
+
+      },
+      "created_at": "2025-01-13T01:33:42.512937+00:00",
+      "updated_at": "2025-02-03T19:07:47.852003+00:00",
+      "openstates_url": "https://openstates.org/or/bills/2025R1/HB2557/",
+      "first_action_date": "2025-01-13T16:01:32+00:00",
+      "latest_action_date": "2025-02-03T16:01:00+00:00",
+      "latest_action_description": "Public Hearing held.",
+      "latest_passage_date": ""
+    },
+    {
+      "id": "ocd-bill/edd639c5-a8b8-474d-b02b-3cd4414312f3",
+      "session": "221",
+      "jurisdiction": {
+        "id": "ocd-jurisdiction/country:us/state:nj/government",
+        "name": "New Jersey",
+        "classification": "state"
+      },
+      "from_organization": {
+        "id": "ocd-organization/0461b3ba-ecad-4ed3-bc89-056dbaa698d1",
+        "name": "Senate",
+        "classification": "upper"
+      },
+      "identifier": "S 3914",
+      "title": "Prohibits aquaculture of any species of octopus for purpose of human consumption.",
+      "classification": [
+        "bill"
+      ],
+      "subject": [
+        "FISH"
+      ],
+      "extras": {
+
+      },
+      "created_at": "2024-11-19T00:21:51.319000+00:00",
+      "updated_at": "2025-02-04T01:24:15.547815+00:00",
+      "openstates_url": "https://openstates.org/nj/bills/221/S3914/",
+      "first_action_date": "2024-12-05T05:00:00+00:00",
+      "latest_action_date": "2024-12-05T05:00:00+00:00",
+      "latest_action_description": "Introduced in the Senate, Referred to Senate Economic Growth Committee",
+      "latest_passage_date": ""
+    },
+    {
+      "id": "ocd-bill/067c7262-499f-45f6-a1ce-7f6f78442798",
+      "session": "2025-2026",
+      "jurisdiction": {
+        "id": "ocd-jurisdiction/country:us/state:wa/government",
+        "name": "Washington",
+        "classification": "state"
+      },
+      "from_organization": {
+        "id": "ocd-organization/7417a716-eba8-4437-a6e9-df14694bcb79",
+        "name": "House",
+        "classification": "lower"
+      },
+      "identifier": "HB 1608",
+      "title": "Concerning the selling, possessing, transporting, and distributing of farmed octopus.",
+      "classification": [
+        "bill"
+      ],
+      "subject": [],
+      "extras": {
+
+      },
+      "created_at": "2025-01-27T18:58:54.265620+00:00",
+      "updated_at": "2025-02-19T20:24:11.602829+00:00",
+      "openstates_url": "https://openstates.org/wa/bills/2025-2026/HB1608/",
+      "first_action_date": "2025-01-27",
+      "latest_action_date": "2025-02-18",
+      "latest_action_description": "Executive session scheduled, but no action was taken in the House Committee on Agriculture & Natural Resources at 10:30 AM.",
+      "latest_passage_date": ""
+    }
+  ],
+  "pagination": {
+    "per_page": 20,
+    "page": 1,
+    "max_page": 1,
+    "total_items": 10
+  }
+}

@@ -1,0 +1,14 @@
+.os-game-title {
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  width: 100%;
+  height: 100px;
+  font-weight: 700;
+  font-size: 30px;
+  color: #095788;
+}
+
+.os-maze {
+  padding-left: 40px;
+}

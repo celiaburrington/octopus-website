@@ -1,0 +1,21 @@
+.os-attribution-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+  height: 100px;
+  font-weight: 700;
+  font-size: xx-large;
+  color: white;
+  background-color: #095788;
+  box-shadow: 0 0 8px black;
+}
+
+.os-img-attr-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}

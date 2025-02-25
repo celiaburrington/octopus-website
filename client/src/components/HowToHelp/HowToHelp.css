@@ -1,0 +1,116 @@
+.os-help-page-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 800px;
+  background-image: url('../../../public/site-resources/Octopus_eyes.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.os-involved-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 250px;
+  font-weight: 700;
+  font-size: 50px;
+  color: white;
+  /* greybeige in rgb for opacity without effecting text */
+  background-color: rgba(165, 161, 132, 0.7);
+}
+
+.os-legislation-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  font-weight: 700;
+  font-size: xx-large;
+  background-color: #e0d6a5;
+}
+
+.os-legislation-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: large;
+}
+
+.os-bill-table {
+  margin: auto;
+  font-size: medium;
+  width: 80%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+th,
+td {
+  padding: 16px;
+  border: 1px solid black;
+}
+
+th {
+  font-size: large;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(225, 225, 225);
+}
+
+.os-petition-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+  height: 100px;
+  font-weight: 700;
+  font-size: xx-large;
+  color: white;
+  background-color: #679db4;
+  border-top: 8px solid #e0d6a5;
+}
+
+.os-petition-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: larger;
+  color: white;
+  background-color: #679db4;
+  border-bottom: 8px solid #e0d6a5;
+  margin-bottom: 40px;
+}
+
+.os-petition-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  font-size: x-large;
+}
+
+.os-petition-icon-r {
+  padding-right: 10px;
+}
+
+.os-petition-icon-l {
+  padding-left: 10px;
+}
+
+.os-pen {
+  padding: 8px;
+}

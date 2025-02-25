@@ -7,6 +7,9 @@ import Layout from './layout';
 import Login from './login';
 import Attribution from './attribution';
 import MainPage from './main';
+import HowToHelp from './HowToHelp/HowToHelp';
+import Octoids from './octoids';
+import Game from './game';
 
 const ProtectedRoute = ({
   user,
@@ -29,16 +32,17 @@ const OctopusWebsite = ({ socket }: { socket: OctoSiteSocket | null }) => {
 
   return (
     <LoginContext.Provider value={{ setUser }}>
-      <Layout />
       <Routes>
         {/* Public Routes */}
         <Route path='/' element={<Navigate to='home' />} />
-        <Route path='/login' element={<Login />} />
         <Route path='/home' element={<MainPage />} />
-        <Route path='/how-to-help' element={<div>Help!!</div>} />
-        <Route path='/octopus-facts' element={<div>Octoids</div>} />
-        <Route path='/game' element={<div>Game!!</div>} />
-        <Route path='/attribution' element={<Attribution />} />
+        <Route element={<Layout />}>
+          <Route path='/login' element={<Login />} />
+          <Route path='/how-to-help' element={<HowToHelp />} />
+          <Route path='/octopus-facts' element={<Octoids />} />
+          <Route path='/game' element={<Game />} />
+          <Route path='/attribution' element={<Attribution />} />
+        </Route>
 
         {/* Protected Routes */}
         {

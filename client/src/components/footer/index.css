@@ -1,6 +1,4 @@
 .os-footer {
-  position: fixed;
-  bottom: 0;
   width: 100%;
   background-color: #679db4;
   color: white;
@@ -10,7 +8,7 @@
 }
 
 .os-footer * {
-  padding: 15px;
+  padding: 0px 15px;
 }
 
 .os-footer-menu:hover {

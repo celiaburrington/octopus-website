@@ -1,7 +1,10 @@
 /* Global CSS */
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
+  font-family: futura-pt, sans-serif;
+  overflow-x: hidden;
 }
 
 /* Website Theme Colors */
@@ -14,25 +17,34 @@ body, html {
 }
 
 .os-greybeige {
-  color: #A5A184;
+  color: #a5a184;
 }
 
 .os-sand {
-  color: #E0D6A5;
+  color: #e0d6a5;
 }
 
 .os-white {
   color: white;
 }
 
-
 .os-no-link {
   text-decoration: none;
   color: white;
-  transition: transform 0.3s ease, color 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
 }
 
 .os-no-link:hover {
-  color: #E0D6A5;
+  color: #e0d6a5;
   transform: translateY(-5px);
+}
+
+.os-img-attr {
+  position: absolute;
+  font-size: xx-small;
+  color: white;
+  padding: 10px;
+  inset: 0;
 }
