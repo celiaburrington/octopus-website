@@ -37,7 +37,7 @@ const OctopusWebsite = ({ socket }: { socket: OctoSiteSocket | null }) => {
         <Route path='/' element={<Navigate to='home' />} />
         <Route path='/home' element={<MainPage />} />
         <Route element={<Layout />}>
-          <Route path='/login' element={<Login />} />
+          <Route path='/login' element={<h1>Currently in Developememt!</h1>} />
           <Route path='/how-to-help' element={<HowToHelp />} />
           <Route path='/octopus-facts' element={<Octoids />} />
           <Route path='/game' element={<Game />} />
