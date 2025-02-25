@@ -13,9 +13,9 @@ const App = () => {
 
   const serverURL = process.env.REACT_APP_SERVER_URL;
 
-  if (serverURL === undefined) {
-    throw new Error("Environment variable 'OCTOPUS_APP_SERVER_URL' must be defined");
-  }
+  // if (serverURL === undefined) {
+  //   throw new Error("Environment variable 'OCTOPUS_APP_SERVER_URL' must be defined");
+  // }
 
   useEffect(() => {
     if (!socket) {
