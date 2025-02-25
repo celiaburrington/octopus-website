@@ -13,7 +13,7 @@
 
 body {
   .parallax_wrapper {
-    height: 100vh;
+    height: 695px;
     overflow-x: hidden;
     overflow-y: auto;
     perspective: 300px; // refers to the z axis, says I'm looking from 300px away from the computer
@@ -31,7 +31,7 @@ body {
 
     .parallax_group {
       position: relative;
-      height: 100vh;
+      height: 695px;
       transform-style: preserve-3d; 
       // ^ when we give depth to pages, this makes sure perspective is preserved (some browsers will flatten)
 
@@ -43,7 +43,6 @@ body {
 
       .base_layer {
         // scale: 1 + ((Z transform val * -1) / perspective)
-        // 1 + ((-300 * -1) / 300) = 1+1 = 2
         transform: translateZ(-300px) scale(2);
 
         .os-img-attr {
@@ -56,7 +55,6 @@ body {
       }
 
       .mid_layer_test {
-        // background-color: #A5A184;
         background-color: #E0D6A5;
         transform: translateZ(0)
       }
