@@ -11,14 +11,22 @@ Which brings us to about two weeks or so after discovering the octopus situation
 Priority #1 is main page UI.
 
 # TODO
+
 ### Rough Task Tracking
 
+Misc.
+
+- Gov API for octopus bills attribution
+- Fact sources
+
 Home Page
-- Design text sections and plan layout
-- Implement parallax scrolling
-- Write information!
+
+- [x] Design text sections and plan layout
+- [x] Implement parallax scrolling
+- [x] Write information!
 
 General:
+
 - [x] Expand documentation and project description.
 - [x] Add CI pipeline via github actions
 - [x] Add testing framework for server
