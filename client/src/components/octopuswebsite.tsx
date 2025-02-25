@@ -4,7 +4,6 @@ import useOctopusWebsite from '../hooks/useOctopusWebsite';
 import { OctoSiteSocket, User } from '../types';
 import UserContext from '../contexts/UserContext';
 import Layout from './layout';
-import Login from './login';
 import Attribution from './attribution';
 import MainPage from './main';
 import HowToHelp from './HowToHelp/HowToHelp';
