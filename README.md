@@ -20,6 +20,16 @@ Misc.
 
 - Gov API for Octopus bills attribution
 
+Game:
+
+- Implement completing the maze
+- Octopus instead of blue square
+- Reactive to touch screen inputs (?)
+
+  - or Notice that not touch screen compatible
+
+- Octopus sliding puzzle
+
 Home Page
 
 - [x] Design text sections and plan layout
